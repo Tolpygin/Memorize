@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background: black;
+    margin: 3px;
+    box-shadow: 0 0 2px #000;
+    transition: .3s ease;
+    border-radius: 7px;
+}
