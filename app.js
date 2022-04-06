@@ -14,9 +14,9 @@ let colors = [
   "white",
   "grey",
 ];
-colors = [...colors, ...colors]
+colors = [...colors, ...colors];
 let state;
-resetState()
+resetState();
 let intermediateState = [];
 
 function resetState() {
@@ -96,7 +96,9 @@ function showGameEnd() {
     finish.remove();
     timerReset();
     resetState();
-    document.querySelectorAll('.square').forEach((el)=> el.style.removeProperty('background-color'))
+    document
+      .querySelectorAll(".square")
+      .forEach((el) => el.style.removeProperty("background-color"));
   });
   document.body.append(finish);
 }
@@ -130,6 +132,10 @@ function timerReset() {
   clearInterval(intervalId);
   intervalId = null;
   zeroTimer();
+  resetState();
+  document
+    .querySelectorAll(".square")
+    .forEach((el) => el.style.removeProperty("background-color"));
 }
 
 function zeroTimer() {
